@@ -1,0 +1,142 @@
+@media screen and (min-width: 769px){
+    .wrapper{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        background-image: url(../Img/Top.jpg);
+        min-height: 500px;
+        margin: 0px 0 10px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container {
+        display: grid;
+        grid-template-areas: "img  h2"
+                             "img  p"
+                             "img bottom";
+        grid-template-columns: 1fr 2fr;
+        margin: 0 0 25px 0;
+      }
+      
+    .container > img {
+        grid-area: img;
+        width: 100%;
+      }
+      
+    .container > h2 {
+        grid-area: h2;
+      }
+      
+    .container > p{
+        grid-area: p;
+      }
+    
+    .container .button{
+        grid-area: bottom;
+        justify-self: end;
+        
+    }
+
+    .container h2{
+        margin: 0;
+    }
+
+    .kort {
+        display: grid;
+        grid-template-areas: "div div"
+                             "img  h2"
+                             "img  p"
+                             "img bottom";
+        grid-template-columns: 1fr 2fr;
+        margin: 0 5% 25px;
+        background-color: #F1EBEB;
+      }
+    
+    .kort > img {
+        grid-area: img;
+        width: 500px;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+    .kort > div {
+        grid-area: div;
+      }
+      
+    .kort > h2 {
+        grid-area: h2;
+        
+      }
+      
+    .kort > p{
+        grid-area: p;
+      }
+    
+    .kort .button{
+        grid-area: bottom;
+        justify-self: end;
+        
+    }
+
+    .kort h2{
+        margin: 0;
+    }
+
+    #KortOverskrift{
+        margin: 0;
+        font-size: 22px;
+    }
+
+    section h4{
+        margin: 0 20%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        display: flex;
+        flex-flow: column wrap-reverse;
+        justify-content: flex-end;
+        margin: 0 4%;
+     }
+     
+    .kort{
+         display: flex;
+         flex-flow: column wrap-reverse;
+         justify-content: flex-end;
+         margin: 20px 8% 5%;
+         background-color: #F1EBEB;
+      }
+
+    .cover {
+        object-fit: cover;
+        max-height: 250px;
+      }
+    
+    .top{
+        display: flex;
+        flex-flow: column wrap-reverse;
+        justify-content: flex-end;
+     }
+
+    .wrapper{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        background-image: url(../Img/Top.jpg);
+        min-height: 250px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    section h4{
+        margin: 0;
+    }
+
+    #KortOverskrift{
+        margin: 10vw 0 0;
+        font-size: 22px;
+    }
+
+}

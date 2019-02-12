@@ -1,0 +1,20 @@
+.button {
+    background-color: #C40000;
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline;
+    margin: 40px 10px 10px;
+    cursor: pointer;
+    border-radius: 50px;
+    width: 157px;
+    height: 45px;
+  }
+
+  .text{
+    text-decoration: none;
+    color: #f1ebeb;
+    font-size: 16px;
+    font-family: Arial;
+    
+  }
